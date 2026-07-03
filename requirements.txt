@@ -4,3 +4,4 @@ statsmodels
 scikit-learn
 scipy
 streamlit
+pandas-datareader
