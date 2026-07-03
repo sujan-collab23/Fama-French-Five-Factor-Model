@@ -65,9 +65,7 @@ def optimize_production_portfolio(tickers, mean_returns, cov_matrix, risk_free, 
     res = minimize(analytical_objective, init_weights, method='SLSQP', bounds=bounds, constraints=cons)
     return res.x if res.success else init_weights
 
-# --- Execution ---
-if _name_ == "_main_":
-    data_df, adv_df, factors = fetch_and_clean_production_data(TICKERS, START_DATE)
+
     
     # Snapshot last 126 days (6 months)
     is_df = data_df.iloc[-126:]
