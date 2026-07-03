@@ -1,4 +1,5 @@
 import streamlit as st
+st.write("Hello! The app is running.")
 import os
 import json
 import logging
